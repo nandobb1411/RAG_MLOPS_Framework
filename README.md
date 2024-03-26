@@ -59,4 +59,5 @@ The Rag project is designed to automate the analysis of documents through the fo
 To run the main functionality, execute:
 
 ```bash
-python script_name.py "query text"
+python create_database.py
+python query_data.py "when was the factory created?"
