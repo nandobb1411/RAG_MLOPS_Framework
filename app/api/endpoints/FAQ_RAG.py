@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning, module='langchain
 
 
 router = APIRouter()
-CHROMA_PATH = "chroma_chocolate_factory"
+CHROMA_PATH = "app\chroma_chocolate_factory"
 
 PROMPT_TEMPLATE = """
 Answer the question based only on the following context:
