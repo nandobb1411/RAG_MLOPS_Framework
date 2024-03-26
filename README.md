@@ -10,7 +10,7 @@ This documentation outlines the setup and functionality of a Rag project focused
 ### Prerequisites
 
 - Python 3.8 or newer
-- pip package manager
+- pip package manager (can be conda as well)
 - ensure openai api key is in ambient variables
 
 ### Steps
@@ -22,6 +22,14 @@ This documentation outlines the setup and functionality of a Rag project focused
     ```bash
     pip install -r requirements.txt
     ```
+4. Use command:
+    ```bash
+     uvicorn main:app --host 0.0.0.0 --port 8001
+     ```
+    inside `app\api` to initiate fast api server
+5. Can be accessible through postman/insomnia, but use fast API documentation to test. go to browser and type http://127.0.0.1:8001/docs#/default/rag_prompt_question_post
+6. Test out prompts on the endpoint `default/rag_prompt_question_post`
+7. Example on fast api automatic documentation: ![alt text](image.png)
 
 ## Project Overview
 
@@ -59,5 +67,4 @@ The Rag project is designed to automate the analysis of documents through the fo
 To run the main functionality, execute:
 
 ```bash
-python create_database.py
 python query_data.py "when was the factory created?"
