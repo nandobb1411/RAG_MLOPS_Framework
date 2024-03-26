@@ -1,0 +1,9 @@
+uvicorn==0.15.0
+fastapi==0.70.0
+pydantic==1.8.2
+requests==2.25.1
+langchain
+unstructured 
+chromadb 
+openai 
+tiktoken  
