@@ -1,5 +1,5 @@
 
-# Rag Project Documentation
+# Bertoncello's Chocolate Factory Rag Project Documentation
 
 ## Introduction
 
