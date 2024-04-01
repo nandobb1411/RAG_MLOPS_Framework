@@ -6,7 +6,7 @@ from langchain.vectorstores.chroma import Chroma
 import os
 import shutil
 
-CHROMA_PATH = "app\chroma_chocolate_factory"
+CHROMA_PATH = r"app\chroma_chocolate_factory"
 DATA_PATH = r"support_scripts\bertoncello_chocolate_factory"
 
 def main():
@@ -35,7 +35,7 @@ def split_text(documents: list[Document]):
     chunks = text_splitter.split_documents(documents)
     print(f"Split {len(documents)} documents into {len(chunks)} chunks.")
 
-    document = chunks[10]
+    document = chunks[8]
     print(document.page_content)
     print(document.metadata)
 
